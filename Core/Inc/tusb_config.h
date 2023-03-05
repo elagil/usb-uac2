@@ -61,7 +61,7 @@ extern "C" {
 #endif
 
 #ifndef CFG_TUSB_DEBUG
-#define CFG_TUSB_DEBUG        0
+#define CFG_TUSB_DEBUG        3
 #endif
 
 // Enable Device stack
@@ -85,7 +85,7 @@ extern "C" {
 #define CFG_TUSB_MEM_ALIGN        __attribute__ ((aligned(4)))
 #endif
 
-#define CFG_TUSB_RHPORT0_MODE OPT_MODE_DEVICE
+#define CFG_TUSB_RHPORT0_MODE OPT_MODE_DEVICE | BOARD_TUD_MAX_SPEED
 #define CFG_TUSB_RHPORT1_MODE OPT_MODE_NONE
 
 //--------------------------------------------------------------------
